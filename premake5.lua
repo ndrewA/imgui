@@ -20,9 +20,9 @@ project "ImGui"
     }
 
     filter "system:windows"
-        systemversion: "latest"
-        cppdialect: "C++17"
-        staticruntime: "on"
+        systemversion "latest"
+        cppdialect "C++17"
+        staticruntime "on"
 
     filter { "system:windows", "configurations:Release" }
         runtime "Release"
