@@ -16,7 +16,8 @@ project "ImGui"
         "imstb_rectpack.h",
         "imstb_textedit.h",
         "imstb_truetype.h",
-        "imguidemo.cpp"
+        "imgui_demo.cpp",
+        "imgui_tables.cpp"
     }
 
     filter "system:windows"
@@ -26,4 +27,7 @@ project "ImGui"
 
     filter { "system:windows", "configurations:Release" }
         runtime "Release"
+
+    filter { "system:windows", "configurations:Debug" }
+        runtime "Debug"
         
